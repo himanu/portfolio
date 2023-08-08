@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context";
 import "./Navbar.css";
 const Navbar = () => {
     const {theme} = useContext(ThemeContext);
+    console.log("theme ", theme);
     return (
         <div className={"navbar " + theme}>
             <div> HIMANSHU </div>
