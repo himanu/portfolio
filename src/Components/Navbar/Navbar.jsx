@@ -1,7 +1,10 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 import "./Navbar.css";
 const Navbar = () => {
+    const {theme} = useContext(ThemeContext);
     return (
-        <div className="navbar">
+        <div className={"navbar " + theme}>
             <div> HIMANSHU </div>
             <div>
                 <div> About </div>

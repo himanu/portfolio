@@ -1,7 +1,21 @@
+:root {
+    --navbar-dark-bg-color: #000;
+    --navbar-dark-font-color: #fff;
+    --navbar-light-font-color: #000;
+    --navbar-light-bg-color: #fff;
+}
+
 .navbar {
-    background-color: #000;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    color: #fff;
+}
+.navbar.dark {
+    background-color: var(--navbar-dark-bg-color);
+    color: var(--navbar-dark-font-color);
+}
+
+.navbar.light {
+    background-color: var(--navbar-light-bg-color);
+    color: var(--navbar-light-font-color);
 }
